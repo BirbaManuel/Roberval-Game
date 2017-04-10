@@ -1,0 +1,82 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <title>My AngularJS FDJ App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript">
+    	//var app = angular.module("FDJ");
+    	var bouleMax = function (pBoule1, pBoule2) {
+						  var max = Math.max(arguments[0], arguments[1]);
+						  return (max == arguments[0])? "la boule la plus lourde est la boule 1" :  "la boule la plus lourde est la boule 2";
+						};
+		/*
+		
+		var plateau_1 = [];
+		var plateau_2 = [];
+		var balance = function(pPlateau_1, pPlateau_2){
+		  let poidsPlateau1;
+		  let poidsPlateau2;
+		  return Math.max(poidsPlateau1, poidsPlateau2)
+		};
+		var boulePoids1 = 1;
+		var boulePoids2 = 2;
+		var boulePoids3 = 3;
+		var boulePoids4 = 4;
+		var boulePoids5 = 5;
+		var boulePoids6 = 6;
+		var boulePoids7 = 7;
+		var boulePoids8 = 8;
+		plateau_1.push(boulePoids1, boulePoids2, boulePoids3, boulePoids4)
+		plateau_2.push(boulePoids5, boulePoids6, boulePoids7, boulePoids8)
+		var sum = plateau_1.reduce((pv, cv) => pv+cv, 0);
+		var sum1 = plateau_1.reduce((pv, cv) => pv+cv, 0);
+		var sum2 = plateau_2.reduce((pv, cv) => pv+cv, 0);
+		*/				
+    </script>
+    <style type="text/css">
+    	#containerBoule{
+    		background-color: cyan;
+    		width: 80%;
+    		height: 150px;
+    		padding: 15px
+    	}
+    	#containerBoule > span{
+
+    	}
+    	#containerBalance{
+    		background-color: pink;
+    		width: 80%;
+    		padding: 15px
+    	}
+    	#containerButtonBalance{
+
+    	}
+    	#containerResultat{
+    		width: 80%;
+    		padding: 15px
+    	}
+    </style>
+  </head>
+  <body>
+	  <H1>FDJ</H1>
+	  <div id="containerBoule">
+	  	<span>boule 1</span>
+		  <span>boule 2</span>
+		  <span>boule 3</span>
+		  <span>boule 4</span>
+		  <span>boule 4</span>
+		  <span>boule 5</span>
+		  <span>boule 6</span>
+		  <span>boule 7</span>
+		  <span>boule 8</span>
+	  </div>
+	  <div id="containerBalance">
+	  	<div id="label">balance Roberval</div>
+	  	<div id="containerButtonBalance">
+	  		<span>Exécuter</span>
+	  		<span>Reset</span>
+	  	</div> 
+	  </div>	  
+	  <div id="containerResultat">C'est la boule X qui est la plus lourde! Solution trouvée en X itérations</div>	
+  </body>
+</html>
